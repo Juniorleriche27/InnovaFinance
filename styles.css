@@ -1,0 +1,115 @@
+/* Appliquer un style de base à tout le body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Cette règle fait que le contenu prend la hauteur complète de la page */
+    align-items: center; /* Centrer le contenu horizontalement */
+}
+
+/* Centrage de l'en-tête */
+header {
+    background-color: #87CEEB;
+    color: white;
+    text-align: center;
+    padding: 40px 20px; /* Espace supplémentaire en haut et en bas */
+    margin-bottom: 40px; /* Espacement sous l'en-tête pour séparer du contenu */
+    width: 100%; /* Prendre toute la largeur de la page */
+}
+
+/* Liste de navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section principale avec les services, formation, etc. */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer tous les éléments de la section */
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 30px;
+}
+
+/* Titres des sections */
+section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px; /* Ajouter un peu d'espace sous les titres */
+}
+
+/* Style des champs de formulaire, boutons, et autres éléments */
+label {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+    text-align: center; /* Centrer le texte des labels */
+}
+
+input[type="text"], input[type="file"], select {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #90EE90;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%; /* Prendre toute la largeur de la page */
+    margin-top: auto; /* Pousse le footer vers le bas */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Style pour les sections spécifiques */
+#contact, #about {
+    margin-top: 40px;
+}

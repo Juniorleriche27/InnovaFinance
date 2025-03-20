@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaFinance</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Calculator.js"></script>
+    <a href="About.html">À propos</a>
+    <a href="Contact.html">Contact</a>
+
+
+</head>
+<body>
+    <header>
+        <h1>ClicSend</h1>
+        <p>Bienvenue dans l'univers de l'innovation financière</p>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+  
+    <section id="crypto">
+        <h2>Achat et Vente de Crypto-Monnaie</h2>
+        <p>Sélectionnez une crypto-monnaie et passez votre commande.</p>
+    
+        <!-- Choix de la crypto -->
+        <label for="crypto-select">Choisissez une crypto :</label>
+        <select id="crypto-select">
+             <!-- Liste des cryptomonnaies (plus de 100 cryptos) -->
+             <option value="bitcoin">Bitcoin (BTC)</option>
+             <option value="ethereum">Ethereum (ETH)</option>
+             <option value="ripple">Ripple (XRP)</option>
+             <option value="litecoin">Litecoin (LTC)</option>
+             <option value="tether">Tether (USDT)</option>
+             <option value="binancecoin">Binance Coin (BNB)</option>
+             <option value="cardano">Cardano (ADA)</option>
+             <option value="polkadot">Polkadot (DOT)</option>
+             <option value="dogecoin">Dogecoin (DOGE)</option>
+             <option value="solana">Solana (SOL)</option>
+             <option value="uniswap">Uniswap (UNI)</option>
+             <option value="avalanche">Avalanche (AVAX)</option>
+             <option value="shiba-inu">Shiba Inu (SHIB)</option>
+             <option value="chainlink">Chainlink (LINK)</option>
+             <option value="polygon">Polygon (MATIC)</option>
+             <option value="vechain">VeChain (VET)</option>
+             <option value="tron">TRON (TRX)</option>
+             <option value="cosmos">Cosmos (ATOM)</option>
+             <option value="ethereum-classic">Ethereum Classic (ETC)</option>
+             <option value="fantom">Fantom (FTM)</option>
+             <option value="filecoin">Filecoin (FIL)</option>
+             <option value="monero">Monero (XMR)</option>
+             <option value="nem">NEM (XEM)</option>
+             <option value="maker">Maker (MKR)</option>
+             <option value="kusama">Kusama (KSM)</option>
+             <option value="lido">Lido (LDO)</option>
+             <option value="helium">Helium (HNT)</option>
+             <option value="dash">Dash (DASH)</option>
+             <option value="zcash">Zcash (ZEC)</option>
+             <!-- Ajouter plus de cryptomonnaies ici -->
+             <option value="avalanche-2">Avalanche 2 (AVAX2)</option>
+             <option value="eos">EOS (EOS)</option>
+             <option value="tron">TRON (TRX)</option>
+             <option value="stellar">Stellar (XLM)</option>
+             <option value="dogecoin">Dogecoin (DOGE)</option>
+             <option value="chainlink">Chainlink (LINK)</option>
+             <option value="polygon">Polygon (MATIC)</option>
+             <option value="dogecoin">Dogecoin (DOGE)</option>
+             <option value="chainlink">Chainlink (LINK)</option>
+             <option value="polkadot">Polkadot (DOT)</option>
+             <option value="monero">Monero (XMR)</option>
+             <option value="tether">Tether (USDT)</option>
+             <option value="shiba-inu">Shiba Inu (SHIB)</option>
+             <!-- etc. -->
+        </select>
+    
+        <input type="text" id="crypto-autre" placeholder="Nom de la crypto" style="display:none;">
+    
+        <!-- Adresse de réception -->
+        <label for="wallet">Adresse de réception :</label>
+        <input type="text" id="wallet" placeholder="Votre adresse de réception">
+
+        <label for="quantity">Quantité :</label>
+        <input type="number" id="quantity" name="quantity" min="0.01" step="any" placeholder="Quantité de crypto" required>
+
+        <button type="submit">Calculer</button>
+    </form>
+
+    <!-- Zone où afficher le prix réel -->
+    <p id="result"></p>
+    
+        <!-- Boutons pour acheter et vendre -->
+        <button onclick="acheterCrypto()">Acheter</button>
+        <button onclick="vendreCrypto()">Vendre</button>
+    
+        <!-- Section pour joindre une capture d'écran -->
+        <label for="screenshot">Joindre une capture d'écran :</label>
+        <input type="file" id="screenshot" accept="image/*">
+    </section>
+
+    
+    </section>
+
+  
+  <section id="formation">
+      <h2>Formations</h2>
+      <p>Nos formations spécialisées vous permettront de maîtriser les compétences clés dans le domaine financier.</p>
+  
+      <label for="formation-select">Choisissez une formation :</label>
+      <select id="formation-select">
+          <option value="trading">Trading</option>
+          <option value="crypto">Cryptomonnaie</option>
+          <option value="analyse-technique">Analyse Technique</option>
+          <option value="gestion-risque">Gestion des Risques</option>
+      </select>
+  
+      <button onclick="sInscrireFormation()">S'inscrire</button>
+  </section>
+  
+
+
+
+    <footer>
+        <p>&copy; 2025 ClicSend. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
